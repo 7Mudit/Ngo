@@ -1,0 +1,121 @@
+
+
+.navbar_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    margin-right: 70px;
+}
+
+.navbar_section_one {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.navbar_section_one h4 {
+    color: #e31837;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #e31837;
+    cursor: pointer;
+}
+
+.navbar_section_two {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar_section_two_image{
+    flex: 0 0 20%;
+}
+.navbar_section_two img {
+    width: 220px;
+    height: 90px;
+}
+
+.navbar_section_two_links {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 13px;
+    gap: 3em; /* adjust this value as needed */
+}
+
+
+
+.navbar_section_two_sebu {
+    flex: 0 0 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-size {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.navbar_section_two_sebu button {
+    color: white;
+    padding: 15px 50px;
+    background-color: #e31837;
+    border: none;
+    font-weight: bolder;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar_section_two_links>div {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.item{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_section_two_links>div:hover {
+    color: #e31837;
+}
+
+.navbar_section_two_links>div::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 30%; 
+    height: 2px;
+    background-color: #e31837;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.navbar_section_two_links>div:hover::after {
+    transform: translateX(0);
+}

@@ -1,0 +1,46 @@
+.main_section {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://www.sads.org/wp-content/uploads/2020/12/parents-with-child-in-living-room.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+.main_section_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 70px 30px;
+    gap: 30px;
+    position: relative; /* Ensures that the text is on top of the gradient overlay */
+}
+.main_section_content h2{
+    font-size: 50px;
+}
+.main_section_content h2 span{
+    color: #e31837;
+}
+
+.main_section_content p{
+    width: 35%;
+    line-height: 28px;
+}
+.main_section_content button{
+    background-color: #e31837;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
