@@ -1,4 +1,4 @@
-import React , {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
@@ -7,7 +7,7 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { BsYoutube } from "react-icons/bs";
 import { BsTiktok } from "react-icons/bs";
 import { VscSearch } from "react-icons/vsc";
-import logo from '../../images/udaan4.png'
+import logo from "../../images/udaan4.png";
 // import logo from "../../images/logo.png";
 
 const Navbar = () => {
@@ -19,13 +19,13 @@ const Navbar = () => {
       if (show !== isScrolled) setIsScrolled(show);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [isScrolled]);
   return (
-<>
+    <>
       <div className="navbar_section_one">
         <div className="icons">
           <FaFacebookF />
@@ -41,9 +41,9 @@ const Navbar = () => {
       </div>
       {/* <div className="navbar_section_two"> */}
       <div className={`navbar_section_two ${isScrolled ? "scrolled" : ""}`}>
-      <div className="navbar_section_two_image">
-        <img src={logo} alt="Not found" />
-      </div>
+        <div className="navbar_section_two_image">
+          <img src={logo} alt="Not found" />
+        </div>
         <div className="navbar_section_two_links">
           <div className="item">UDAAN Conditions</div>
           <div className="item">If You Suspect</div>
@@ -59,7 +59,7 @@ const Navbar = () => {
           <button>Donate</button>
         </div>
       </div>
-</>
+    </>
   );
 };
 
