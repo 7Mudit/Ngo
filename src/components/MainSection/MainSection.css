@@ -50,13 +50,15 @@
     font-weight: bold;
     font-size: 16px;
 }
+
 .main_section_banner {
     width: 100%;
     display: flex;
     flex-direction: row;
-    position: absolute; /* Position this container absolutely */
-    bottom: 0; 
-    height: 120px; 
+    position: absolute;
+    /* Position this container absolutely */
+    bottom: 0;
+    height: 120px;
     align-items: flex-end;
 }
 
@@ -75,8 +77,7 @@
     position: relative;
     cursor: pointer;
     transition: height 0.3s ease;
-    /* Add transition for smooth height change */
-    overflow: hidden; /* Prevents scrollbar from appearing when box height increases */
+    overflow: hidden;
 }
 
 
@@ -87,9 +88,6 @@
 .box2 {
     background-color: #b61931;
 }
-
-
-
 .box3 {
     background-color: #901627;
 }
@@ -97,30 +95,9 @@
 .box1:hover,
 .box2:hover,
 .box3:hover {
-    height: 105px; /* New: increase height of box on hover */
+    height: 105px;
+    /* New: increase height of box on hover */
 }
-.box1::before,
-.box2::before,
-.box3::before {
-    /* Pseudo-elements to increase height on hover */
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; /* Make sure the pseudo element covers the entire box */
-    background: inherit;
-    z-index: -1;
-    transition: all 0.3s ease; /* Make sure this transition matches the one for the box */
-}
-.box1:hover::before,
-.box2:hover::before,
-.box3:hover::before {
-    /* No need to change height of pseudo-element on hover */
-    opacity: 0.9; /* You can change this as you like */
-}
-
-
 
 
 
