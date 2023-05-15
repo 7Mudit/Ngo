@@ -1,0 +1,87 @@
+.supportSection{
+    width: 100%;
+    height: 700px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.supportSection-left{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 40px;
+    height: 600px;
+    width: 40%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px 30px;
+}
+.supportSection-right{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    height: 600px;
+    width: 40%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 40px 30px;
+}
+.supportSection-right h3{
+    font-size: 30px;
+}
+.supportSection-right p{
+    letter-spacing: 1.05px;
+    font-weight: lighter;
+}
+.supportSection-left h3{
+    font-size: 30px;
+}
+.supportSection-left p{
+    letter-spacing: 1.05px;
+    font-weight: lighter;
+}
+.supportSection-left a{
+    color: #e31837;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-size: 18px;
+    transition: color 0.5s ease-in-out;
+}
+.supportSection-left a:hover{
+    color: black;
+}
+.supportSection-right{
+    width: 40%;
+    height: 600px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.icon-arrow-support{
+    padding-top: 5px;
+}
+.icon-arrow-support:hover{
+    color: black;
+}
+
+.supportSection-right button{
+    color: white;
+    background-color: #e31837;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: auto;
+}
+.supportSection-right button:hover{
+    border: 1px solid #e31837;
+    background-color: white;
+    color: #e31837;
+}
+

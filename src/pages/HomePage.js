@@ -4,6 +4,7 @@ import MainSection from "../components/MainSection/MainSection";
 import CardSection from "../components/CardSection/CardSection";
 import SharingSection from "../components/SharingSection/SharingSection";
 import BannerSection from "../components/BannerSection/BannerSection";
+import SupportSection from "../components/SupportSection/SupportSection";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <CardSection/>
       <SharingSection/>
       <BannerSection/>
+      <SupportSection/>
     </>
   );
 };
