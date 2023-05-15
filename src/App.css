@@ -4,5 +4,5 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Muli', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }

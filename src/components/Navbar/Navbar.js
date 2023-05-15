@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState, useEffect} from "react";
 import "./Navbar.css";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
@@ -7,11 +7,25 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { BsYoutube } from "react-icons/bs";
 import { BsTiktok } from "react-icons/bs";
 import { VscSearch } from "react-icons/vsc";
-import logo from "../../images/logo.png";
+import logo from '../../images/udaan4.png'
+// import logo from "../../images/logo.png";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 50;
+      if (show !== isScrolled) setIsScrolled(show);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isScrolled]);
   return (
-    <div className="navbar_section">
+<>
       <div className="navbar_section_one">
         <div className="icons">
           <FaFacebookF />
@@ -25,7 +39,8 @@ const Navbar = () => {
         <h4>About Us</h4>
         <h4>Contact Us</h4>
       </div>
-      <div className="navbar_section_two">
+      {/* <div className="navbar_section_two"> */}
+      <div className={`navbar_section_two ${isScrolled ? "scrolled" : ""}`}>
       <div className="navbar_section_two_image">
         <img src={logo} alt="Not found" />
       </div>
@@ -44,7 +59,7 @@ const Navbar = () => {
           <button>Donate</button>
         </div>
       </div>
-    </div>
+</>
   );
 };
 
