@@ -1,0 +1,94 @@
+.sharing-section{
+    background-color: #fafafa;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sharing-section-card{
+    background-color: white;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 30px;
+    padding-bottom: 0px;
+    justify-content: space-between;
+}
+
+.sharing-section-card-image{
+    width: 30%;
+}
+.sharing-section-card-image img{
+    width: 100%;
+    background-size: cover;
+
+}
+.sharing-section-card-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+.sharing-section-card-content span{
+    color: #e31837;
+}
+.sharing-section-card-content p{
+    font-size: 15.5px;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 22px;
+}
+.sharing-section-card-content-one{
+    display: flex;
+    flex-direction: row;
+}
+.sharing-section-card-content-two{
+    display: flex;
+    flex-direction: row;
+}
+.sharing-section-card-content-one-image{
+    width: 100px;
+}
+.sharing-section-card-content-two-image{
+    width: 100px;
+}
+.sharing-section-card-content-one img{
+    width: 50px;
+    height: 50px;
+}
+.sharing-section-card-content-two img{
+    width: 50px;
+    height: 50px;
+}
+
+.sharing-section-card-content-one-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sharing-section-card-content-two-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sharing-section-card-content-one-text h3{
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.sharing-section-card-content-one-text h3:hover{
+    color: #e31837;
+}
+.sharing-section-card-content-two-text h3:hover{
+    color: #e31837;
+}
+.sharing-section-card-content-two-text h3{
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
