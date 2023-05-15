@@ -5,6 +5,8 @@ import CardSection from "../components/CardSection/CardSection";
 import SharingSection from "../components/SharingSection/SharingSection";
 import BannerSection from "../components/BannerSection/BannerSection";
 import SupportSection from "../components/SupportSection/SupportSection";
+import FooterSection from "../components/FooterSection/FooterSection";
+
 
 const HomePage = () => {
   return (
@@ -15,6 +17,7 @@ const HomePage = () => {
       <SharingSection/>
       <BannerSection/>
       <SupportSection/>
+      <FooterSection/>
     </>
   );
 };
