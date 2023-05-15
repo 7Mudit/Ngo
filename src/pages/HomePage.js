@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <MainSection></MainSection>
+      <MainSection/>
     </>
   );
 };

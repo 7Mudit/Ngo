@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     position: relative;
 }
+
 .main_section::before {
     content: "";
     position: absolute;
@@ -14,8 +15,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
 }
+
 .main_section_content {
     display: flex;
     flex-direction: column;
@@ -23,24 +25,105 @@
     justify-content: center;
     padding: 70px 30px;
     gap: 30px;
-    position: relative; /* Ensures that the text is on top of the gradient overlay */
+    position: relative;
+    /* Ensures that the text is on top of the gradient overlay */
 }
-.main_section_content h2{
+
+.main_section_content h2 {
     font-size: 50px;
 }
-.main_section_content h2 span{
+
+.main_section_content h2 span {
     color: #e31837;
 }
 
-.main_section_content p{
+.main_section_content p {
     width: 35%;
     line-height: 28px;
 }
-.main_section_content button{
+
+.main_section_content button {
     background-color: #e31837;
     color: white;
     padding: 10px 22px;
     border: none;
     font-weight: bold;
     font-size: 16px;
+}
+.main_section_banner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute; /* Position this container absolutely */
+    bottom: 0; 
+    height: 120px; 
+    align-items: flex-end;
+}
+
+.box1,
+.box2,
+.box3 {
+    /* Common styles for boxes */
+    width: 33.333%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 88px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: height 0.3s ease;
+    /* Add transition for smooth height change */
+    overflow: hidden; /* Prevents scrollbar from appearing when box height increases */
+}
+
+
+.box1 {
+    background-color: #e31837;
+}
+
+.box2 {
+    background-color: #b61931;
+}
+
+
+
+.box3 {
+    background-color: #901627;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    height: 105px; /* New: increase height of box on hover */
+}
+.box1::before,
+.box2::before,
+.box3::before {
+    /* Pseudo-elements to increase height on hover */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Make sure the pseudo element covers the entire box */
+    background: inherit;
+    z-index: -1;
+    transition: all 0.3s ease; /* Make sure this transition matches the one for the box */
+}
+.box1:hover::before,
+.box2:hover::before,
+.box3:hover::before {
+    /* No need to change height of pseudo-element on hover */
+    opacity: 0.9; /* You can change this as you like */
+}
+
+
+
+
+
+.icon-arrow {
+    font-size: 30px;
 }
