@@ -1,6 +1,6 @@
 import React from "react";
 import "./FooterSection.css";
-import logo from "../../images/logo.png";
+import logo from "../../images/udaan4.png";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
@@ -52,7 +52,7 @@ const FooterSection = () => {
             Email US <IoIosArrowForward className="footer-section-four-icon" />
           </li>
           <li>
-            SADS International
+            UDAAN International
             <IoIosArrowForward className="footer-section-four-icon" />
           </li>
         </ul>

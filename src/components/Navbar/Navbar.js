@@ -45,7 +45,7 @@ const Navbar = () => {
         <img src={logo} alt="Not found" />
       </div>
         <div className="navbar_section_two_links">
-          <div className="item">SADS Conditions</div>
+          <div className="item">UDAAN Conditions</div>
           <div className="item">If You Suspect</div>
           <div className="item">Get Involved</div>
           <div className="item">Research</div>

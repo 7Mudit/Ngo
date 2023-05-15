@@ -14,9 +14,9 @@ const SharingSection = () => {
             Sharing Your <span>Stories</span>
           </h3>
           <p>
-            SADS conditions are rare, but you are not alone. Here, you will find
+            UDAAN conditions are rare, but you are not alone. Here, you will find
             a community of understanding, support and guidance from others who
-            are navigating life with a SADS condition. We welcome you to browse
+            are navigating life with a UDAAN condition. We welcome you to browse
             others’ stories and to contribute your own.
           </p>
           <div className="sharing-section-card-content-one">
@@ -27,10 +27,10 @@ const SharingSection = () => {
               />
             </div>
             <div className="sharing-section-card-content-one-text">
-              <h3>SADS Channel Stories</h3>
+              <h3>UDAAN Channel Stories</h3>
               <p>
-                Members of the SADS community share their perspectives and
-                experiences living with or parenting a child with a SADS
+                Members of the UDAAN community share their perspectives and
+                experiences living with or parenting a child with a UDAAN
                 condition.
               </p>
             </div>

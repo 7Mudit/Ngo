@@ -9,16 +9,16 @@ const cardData = [
   {
     id: 1,
     img: img1,
-    title: "SADS Research Survey",
+    title: "UDAAN Research Survey",
     description:
       "We’re working with companies who are almost ready to recruit participants for first-of-their-kind clinical trials for new therapies. Take our ten-minute survey to help us learn more about you so we can help connect you to research studies you might be eligible to participate in.",
   },
   {
     id: 2,
     img: img2,
-    title: "Living With SADS Webinars",
+    title: "Living With UDAAN Webinars",
     description:
-      "Join our top experts who will share their knowledge and advice on topics important to living and thriving with a SADS condition.",
+      "Join our top experts who will share their knowledge and advice on topics important to living and thriving with a UDAAN condition.",
   },
   {
     id: 2,
@@ -30,9 +30,9 @@ const cardData = [
   {
     id: 2,
     img: img4,
-    title: "30 Years of The SADS Foundation",
+    title: "30 Years of The UDAAN Foundation",
     description:
-      "The SADS Foundation was established on December 12, 1991 by Dr. Vincent and several dedicated colleagues and LQTS family members for the purpose of helping to prevent sudden and unexpected cardiac death in children and in young adults. Read more about our history.",
+      "The UDAAN Foundation was established on December 12, 1991 by Dr. Vincent and several dedicated colleagues and LQTS family members for the purpose of helping to prevent sudden and unexpected cardiac death in children and in young adults. Read more about our history.",
   },
 ];
 
@@ -40,10 +40,10 @@ const CardSection = () => {
   return (
     <div className="card_section">
       <h3>
-        Welcome to the <span>SADS Foundation.</span>
+        Welcome to the <span>UDAAN Foundation.</span>
       </h3>
       <p>
-        Established on December 12, 1991 by Dr. Michael Vincent, The SADS
+        Established on December 12, 1991 by Dr. Michael Vincent, The UDAAN
         Foundation is a community of families, medical professionals, and
         supporters saving lives and advancing care for people with heart
         arrhythmia conditions that can lead to sudden death.
