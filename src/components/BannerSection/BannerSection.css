@@ -1,0 +1,54 @@
+.bannerSection{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.bannerSectionLeft{
+    width: 50%;
+    background-color: #e31837;
+}
+.bannerSectionLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+}
+.bannerSectionLeft button{
+    background-color: white;
+    color: #e31837;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: auto;
+}
+.bannerSectionLeft button:hover{
+    color: white;
+    border: 1px solid white;
+    background-color: #e31837;
+}
+.bannerSectionLeft h3{
+    font-size: 40px;
+    color: white;
+}
+.bannerSectionLeft p{
+    font-size: 16px;
+    line-height: 25px;
+    color: white;
+}
+.bannerSectionRight{
+    width: 50%;
+    overflow: hidden;
+}
+.bannerSectionRight img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}

@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import MainSection from "../components/MainSection/MainSection";
 import CardSection from "../components/CardSection/CardSection";
 import SharingSection from "../components/SharingSection/SharingSection";
+import BannerSection from "../components/BannerSection/BannerSection";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <MainSection/>
       <CardSection/>
       <SharingSection/>
+      <BannerSection/>
     </>
   );
 };
