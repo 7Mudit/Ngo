@@ -35,7 +35,9 @@ const DonationForm = ({ isFormSubmitted, setEmail, setLocation  }) => {
     isFormSubmitted(true);
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/submitForm",
+        // render backend sir
+        // "http://localhost:8000/api/submitForm",
+        "https://ngo-backend-mvbn.onrender.com/api/submitForm",
         formData
       );
       toast.success("Form submitted successfully!", {

@@ -29,7 +29,8 @@ const NgoSection = ({ location, email }) => {
     console.log(`Sending request to ${ngo.name}`);
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/send-email",
+        // "http://localhost:8000/api/send-email",
+        "https://ngo-backend-mvbn.onrender.com/api/send-email",
         {
           email: email,
           ngo: ngo,
