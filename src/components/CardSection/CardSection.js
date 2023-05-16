@@ -21,14 +21,14 @@ const cardData = [
       "Join our top experts who will share their knowledge and advice on topics important to living and thriving with a UDAAN condition.",
   },
   {
-    id: 2,
+    id: 3,
     img: img3,
     title: "Your Voice Matters!",
     description:
       "We’re bringing the ARVC patient community together for a first ever EL-PFDD. It’s critical for our ARVC community to participate in the meeting in an effort to show strength in numbers.",
   },
   {
-    id: 2,
+    id: 4,
     img: img4,
     title: "30 Years of The UDAAN Foundation",
     description:

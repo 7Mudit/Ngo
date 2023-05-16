@@ -9,10 +9,12 @@ import { BsTiktok } from "react-icons/bs";
 import { VscSearch } from "react-icons/vsc";
 import logo from "../../images/udaan4.png";
 // import logo from "../../images/logo.png";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-
+  const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {
       const show = window.scrollY > 50;
@@ -56,7 +58,11 @@ const Navbar = () => {
           <div className="icons icon-size">
             <VscSearch />
           </div>
-          <button>Donate</button>
+          <Link to={location.pathname === "/donate" ? "/" : "/donate"}>
+            <button>
+              {location.pathname === "/donate" ? "Home" : "Donate"}
+            </button>
+          </Link>
         </div>
       </div>
     </>
