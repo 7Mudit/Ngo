@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./NgoSection.css";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const NgoSection = ({ location }) => {
+const NgoSection = ({ location, email }) => {
   const [ngos, setNgos] = useState([]);
 
   useEffect(() => {
@@ -11,7 +14,7 @@ const NgoSection = ({ location }) => {
       query: `NGOs in ${location}`,
       fields: ["place_id", "name", "rating", "formatted_address"],
     };
-  
+
     service.textSearch(request, (results, status) => {
       if (
         status === window.google.maps.places.PlacesServiceStatus.OK &&
@@ -22,9 +25,22 @@ const NgoSection = ({ location }) => {
     });
   }, [location]);
 
-  const handleSendRequest = (ngo) => {
+  const handleSendRequest = async (ngo) => {
     console.log(`Sending request to ${ngo.name}`);
-    // Here you can implement the logic for sending the request
+    try {
+      const response = await axios.post(
+        "http://localhost:8000/api/send-email",
+        {
+          email: email,
+          ngo: ngo,
+        }
+      );
+      console.log(response.data);
+      toast.success("Email sent successfully!");
+    } catch (error) {
+      console.error(error);
+      toast.error("An error occurred while sending the email");
+    }
   };
 
   return (

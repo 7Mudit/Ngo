@@ -1,8 +1,11 @@
-import React, { useState , useEffect } from "react";
+import React, { useState } from "react";
 import "./DonationForm.css";
 import { motion } from "framer-motion";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const DonationForm = ({isFormSubmitted,location,setLocation}) => {
+const DonationForm = ({ isFormSubmitted, setEmail, setLocation  }) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -11,7 +14,7 @@ const DonationForm = ({isFormSubmitted,location,setLocation}) => {
     donationType: "Money",
     otherDonationType: "", // new field for the other type of donation
     message: "",
-    location:"",
+    location: "",
     recurring: false,
     agree: false,
   });
@@ -24,14 +27,31 @@ const DonationForm = ({isFormSubmitted,location,setLocation}) => {
     }));
   }
 
-  function handleSubmit(event) {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(formData);
-    setLocation(formData.location)
+    setLocation(formData.location);
+    setEmail(formData.email)
     isFormSubmitted(true);
-  }
-
-
+    try {
+      const response = await axios.post(
+        "http://localhost:8000/api/submitForm",
+        formData
+      );
+      toast.success("Form submitted successfully!", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <motion.div

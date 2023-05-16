@@ -6,13 +6,16 @@ import NgoSection from "../components/NgoSection/NgoSection";
 const DonatePage = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [location,setLocation] = useState('')
+  const [email,setEmail] = useState('')
   return (
     <div>
       <Navbar />
       {!isFormSubmitted ? (
-        <DonationForm isFormSubmitted={setIsFormSubmitted} location = {location} setLocation = {setLocation}/>
+        <DonationForm isFormSubmitted={setIsFormSubmitted} location = {location} setLocation = {setLocation}
+          setEmail={setEmail}
+        /> 
       ) : (
-        <NgoSection location={location} />
+        <NgoSection location={location}  email={email}/>
       )}
     </div>
   );
